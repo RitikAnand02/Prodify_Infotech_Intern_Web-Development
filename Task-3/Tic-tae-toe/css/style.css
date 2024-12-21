@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@media (max-width:800px){
+    .gameContainer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 23px;
+    }
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+nav{
+    background-color: black;
+    color: white;
+}
+li{
+    list-style-type: none;
+    padding: 23px;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+.gameContainer{
+   display: flex;
+   justify-content: center;
+   margin-top: 35px;
+}
+.container{
+   display: grid;
+   grid-template-columns: repeat(3,10vw);
+   grid-template-rows: repeat(3,10vw);
+   font-family: 'Roboto',sans-serif;
+}
+.box{
+    border: 2px solid black;
+    font-size: 8vw;
+    display: flex;
+    justify-content: center;
+}
+.box:hover{
+    cursor: pointer;
+    background-color: greenyellow;
+}
+.gameInfo{
+    padding: 0 23px;
+}
+.imgbox img{
+    width: 0;
+    transition: width 1s ease-in-out;
+}
+.br-0{
+    border-right: 0;
+}
+.bt-0{
+    border-top: 0;
+}
+.bl-0{
+    border-left: 0;
+}
+.bb-0{
+    border-bottom: 0;
+}
